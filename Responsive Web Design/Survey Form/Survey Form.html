@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link  rel="stylesheet" href="Survey Form.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Made by Cristian Conrado</p>
+        </header>
+        <form id="survey-form">
+            <fieldset id="Contact-info">
+            <div>
+                <label id="name-label" for="name">Name </label>
+                <input id="name" type="text" placeholder="Enter your name here(required)" required> 
+            </div>
+            <div>
+                <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email here(required)" required> </label>
+            </div>
+            <div>
+                <label id="number-label" for="number">Number <input id="number" type="number" placeholder="Enter your number here" min="100000000" max="999999999" > </label>
+            </div>
+            <div>
+            </fieldset>
+            <fieldset>
+                <label class="center">Choose your current situation
+                </label>
+                <select id="dropdown">
+                    <option value="" >(select one)</option>
+                    <option value="1">Studying</option>
+                    <option value="2">Unemployed</option>
+                    <option value="3">Working</option>
+                    <option value="4">Looking for work</option>
+                </select>
+            </div>
+            </fieldset>
+            <fieldset>
+            <div>
+                <label for="gender" class="inline">Choose your gender </label>
+                <label class="inline"><input type="radio" id="male" name="gender" class="inline"/> Male</label>
+                <label class="inline"><input type="radio" id="female" name="gender" class="inline"/> Female</label>
+                <label class="inline"><input type="radio" id="female" name="gender" class="inline"/> Other</label>
+            </div>
+            </fieldset>
+            <fieldset>
+                <label for="coding-ocasion">Where do you usually code:</label>
+                <label><input type="checkbox" id="work" value="1" class="inline">Work</label>
+                <label><input type="checkbox" id="home" value="2" class="inline">Home</label>
+                <label><input type="checkbox" id="uni" value="3" class="inline">University/Study Center</label>
+                <label><input type="checkbox" id="outside" value="4" class="inline">Outside</label>
+                <label><input type="checkbox" id="Library" value="5" class="inline">Library</label>
+            </fieldset>
+            <fieldset>
+                <label for="Language" class="center">Which is your favorite programming language and why? </label>
+                <textarea name="language" id="language" cols="54" rows="3" placeholder="Let us know!"></textarea>
+            </fieldset>
+            <fieldset>
+                <button id="submit" type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+
+</html>
